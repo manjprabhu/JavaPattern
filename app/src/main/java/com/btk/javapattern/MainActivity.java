@@ -11,9 +11,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        numberPyramid();
-        startPyramid();
-        showPyramid2();
+
+        DailyPractice dailyPractice = new DailyPractice();
     }
 
     private void startPyramid() {
@@ -85,28 +84,4 @@ public class MainActivity extends AppCompatActivity {
         //        *****
     }
 
-
-    private void numberPyramid() {
-        int n =5;
-
-        for(int i=1;i<=n;i++) {
-
-            for(int j=1;j<=i;j++) {
-                System.out.print(j);
-            }
-
-            for(int k =i+1;k<=n;k++) {
-                System.out.print("*");
-            }
-
-            System.out.println();
-        }
-
-        //Output as Below , here star(*) is just identify the spaces.
-        //            1****
-        //            12***
-        //            123**
-        //            1234*
-        //            12345
-    }
 }
